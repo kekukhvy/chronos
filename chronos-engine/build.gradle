@@ -1,0 +1,9 @@
+description = 'Chronos Engine — scheduler loop, claim, retry, cron'
+
+dependencies {
+    implementation project(':common')
+
+    implementation 'org.jooq:jooq:3.19.10'
+    implementation 'com.zaxxer:HikariCP:5.1.0'
+    implementation 'org.postgresql:postgresql:42.7.3'
+}

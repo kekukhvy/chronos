@@ -1,0 +1,5 @@
+description = 'Chronos Admin — Vaadin UI'
+
+dependencies {
+    implementation project(':common')
+}

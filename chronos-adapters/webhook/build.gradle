@@ -1,0 +1,6 @@
+description = 'Chronos Adapter — HTTP Webhook delivery'
+
+dependencies {
+    implementation project(':common')
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.1'
+}

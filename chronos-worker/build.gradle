@@ -1,0 +1,6 @@
+description = 'Chronos Worker — delivery workers, dispatches to adapters'
+
+dependencies {
+    implementation project(':common')
+    implementation project(':chronos-adapters:kafka')
+}
