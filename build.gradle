@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group = 'dev.chronos'
+version = '0.1.0-SNAPSHOT'
+
+subprojects {
+    apply plugin: 'java'
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(26)
+        }
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation 'org.slf4j:slf4j-api:2.0.13'
+        runtimeOnly 'ch.qos.logback:logback-classic:1.5.6'
+
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
+        testImplementation 'org.assertj:assertj-core:3.26.0'
+        testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+
+    compileJava.options.encoding = 'UTF-8'
+    compileTestJava.options.encoding = 'UTF-8'
+}

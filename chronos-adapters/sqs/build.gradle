@@ -1,0 +1,7 @@
+description = 'Chronos Adapter — AWS SQS delivery'
+
+dependencies {
+    implementation project(':common')
+    implementation platform('software.amazon.awssdk:bom:2.26.12')
+    implementation 'software.amazon.awssdk:sqs'
+}

@@ -1,0 +1,12 @@
+rootProject.name = 'chronos'
+
+include 'common'
+include 'chronos-api'
+include 'chronos-engine'
+include 'chronos-worker'
+include 'chronos-adapters:kafka'
+include 'chronos-adapters:sqs'
+include 'chronos-adapters:webhook'
+include 'chronos-adapters:rabbitmq'
+include 'chronos-admin'
+include 'chronos-sdk'

@@ -1,0 +1,5 @@
+description = 'Chronos Common — shared domain models, ports, and API contracts'
+
+dependencies {
+    // Pure Java — no framework dependencies
+}
